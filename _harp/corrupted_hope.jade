@@ -1,0 +1,52 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('48684558', 'Corrupted Hope')
+		.visible
+			- des = {jr: "Yannis Kritikos", writera: " Minas Pantelidakis", writerb: "David Snijders", maestro: "Maria Eolani", title: "Corrupted Hope" }
+			h4
+				|	#{des.title}
+			h5	
+				|	Filmed | Directed | Edited By #{des.jr}
+			h5
+				|	A short metaphorical video, written and
+				|	filmed entirely on a ship.
+				br
+			p(style='white-space:pre;')
+				br
+				|	<i>It has to do about life, about how a person
+				|	with no power can gain everything
+				|	and then become the one with the power instead
+				|	of moving on...</i>
+				br
+			p(style='white-space:pre;')
+				br
+				|	<i>No extra lights were used.</i>
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Written By</b>
+				|	#{des.jr}, #{des.writera}, #{des.writerb}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Music Composition</b>
+				|	<b>Sound Design</b>
+				|	<b>Audio Mix By</b>
+				|	#{des.maestro}
+			- array = [" Minas Pantelidakis", " Michalis Gikas", " David Snijders"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Cast</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

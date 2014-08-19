@@ -1,0 +1,34 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('69040397', 'FOR YOU')
+		.visible
+			- des = {jr: "Yannis Kritikos", maestro: "Datassette - The Rip (remix)", title: "FOR YOU" }
+			h4
+				|	#{des.title}
+			h5	
+				|	Filmed | Directed | Edited By #{des.jr}
+			h5
+				|	A short film for the <i>Philip Bloom
+				|	Weekend Challenge 'Discipline'</i>
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Music By</b> 
+				|	#{des.maestro}
+				br
+			- array = [" Sober Sober", " Eva Mpolou"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Cast</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

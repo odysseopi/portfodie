@@ -1,0 +1,16 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('88575075', 'ONE NIGHT BAND | GIRL WITH ONE EYE')
+		.visible
+			- des = {jr: "Yannis Kritikos", title: "ONE NIGHT BAND | GIRL WITH ONE EYE" }
+			h4
+				|	#{des.title}
+			h5	
+				|	Filmed/Directed/Edited By #{des.jr}
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

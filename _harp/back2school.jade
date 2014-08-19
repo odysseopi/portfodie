@@ -1,0 +1,35 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('30367038', 'Back 2 School | A Skateboarding Short')
+		.visible
+			- des = {jr: "Yannis Kritikos", title: "Back 2 School | A Skateboarding Short" }
+			h4
+				|	#{des.title}
+			h5	
+				|	Filmed/Edited By #{des.jr}
+			- array = [" Alexandros Aggouridakis", " Giannis Saragas", " Giorgos Karabelas", " Dionisios Marathonitis", " Spyros Tsarouxas", " John Dalios"]
+			p(style='white-space:pre;')
+				|	<b>Riders</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+				|	#{array[3]}
+				|	#{array[4]}
+				|	#{array[5]}
+			- array = [" Marios Zoutis", " Mihalis Tsaxrelias"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Guest Skaters</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

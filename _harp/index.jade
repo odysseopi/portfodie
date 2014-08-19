@@ -1,0 +1,35 @@
+include includes/_head
+body
+	.container
+		.in_full
+			section
+				p 
+					img#trigger-overlay(src='image/kritikoslogo.png')
+		.in_visible
+			h5.left
+				|	<b>Yannis Kritikos - Director | Filmaker</b>
+			h5		
+				|	Being self taught I continue the exploration of filming and editing techniques every day.
+				br
+				|	Let's work on a new project together.
+		.frame
+			include mixins/_frame
+			+frame('dinner.html', 'dinner.jpg')
+			+frame('scopeutirio.html', 'skopeutirio.jpg')
+			+frame('soccerbomb2.html','soccerbomb2.jpg')
+			+frame('csc1.html','csc1.jpg')
+			+frame('back2school.html','back2school.jpg')
+			+frame('onenightband.html','onenightband.jpg')
+			+frame('tertia_rectae.html','tertia_rectae.jpg')
+			+frame('foryou.html','foryou.jpg')
+			+frame('attemptit.html','attemptit.jpg')
+			+frame('corrupted_hope.html','corrupted_hope.jpg')
+			+frame('harrypotter.html','harrypotter.jpg')
+			+frame('skatewise.html','skatewise.jpg')
+			+frame('one_day_on_earth.html','one_day_on_earth.jpg')
+			+frame('constructionarea47.html','constructionarea47.jpg')
+			+frame('hittintheroads.html','hittintheroads.jpg')
+			+frame('blacksheep.html','blacksheep.jpg')
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

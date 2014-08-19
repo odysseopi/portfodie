@@ -1,0 +1,16 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_youtube
+			mixin youtube('Vn3Hh7PmcV8', 'SKATEWISE')
+		.visible
+			- des = {jr: "Yannis Kritikos", title: "SKATEWISE" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed/Directed/Edited By #{des.jr}
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

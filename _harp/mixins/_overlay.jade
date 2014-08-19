@@ -1,0 +1,18 @@
+.overlay.overlay-contentscale
+	button(class='overlay-close', type='button').
+		Close
+	nav
+		ul
+			- array = ["Home", "ShortFilms", "Commercials", "SkateFilms", "MusicFilms", "drop me a line!"]
+			li
+				a(href='index.html') #{array[0]}
+			li
+				a(href='shortfilms.html') #{array[1]}
+			li
+				a(href='commercials.html') #{array[2]}
+			li
+				a(href='skatefilms.html') #{array[3]}
+			li
+				a(href='musicfilms.html') #{array[4]}
+			li
+				a(href='mailto:yannisjrkritikos@gmail.com') #{array[5]}

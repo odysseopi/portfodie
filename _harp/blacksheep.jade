@@ -1,0 +1,28 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('35317643', 'BlackSheep Skates | 2012 Teaser')
+		.visible
+			- des = {jr: "Yannis Kritikos", title: "BlackSheep Skates | 2012 Teaser" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed | Directed | Edited By #{des.jr}
+			- array = [" Dimitris Zogaris", " Mihalis Tsaxrelias", " Giorgos Karabelas", " Spyros Tsarouxas", " Alexandros Agouridakis", " Giannis Saragas"]
+			p(style='white-space:pre;')
+				|	<b>Riders</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+				|	#{array[3]}
+				|	#{array[4]}
+				|	#{array[5]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

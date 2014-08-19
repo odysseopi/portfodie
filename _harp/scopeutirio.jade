@@ -1,0 +1,18 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('98153824', 'National Shooting Range Of Chania | Crete')
+		.visible
+			- des = {jr: "Yannis Kritikos", exe: "Indigoview", title: "National Shooting Range Of Chania | Crete" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed | Directed | By #{des.jr}
+			h5
+				|	Executive Producer Indigoview	
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

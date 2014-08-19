@@ -1,0 +1,20 @@
+include includes/_head
+body
+	.container
+		.in_full
+			section
+				p 
+					img#trigger-overlay(src='image/kritikoslogo.png')
+		.frame
+			include mixins/_frame
+			+frame('dinner.html', 'dinner.jpg')
+			+frame('scopeutirio.html', 'skopeutirio.jpg')
+			+frame('soccerbomb2.html', 'soccerbomb2.jpg')
+			+frame('tertia_rectae.html', 'tertia_rectae.jpg')
+			+frame('attemptit.html', 'attemptit.jpg')
+			+frame('corrupted_hope.html', 'corrupted_hope.jpg')
+			+frame('harrypotter.html', 'harrypotter.jpg')
+			+frame('constructionarea47.html', 'constructionarea47.jpg')
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

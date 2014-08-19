@@ -1,0 +1,16 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('71030415', 'CSC | Chania Surf Club')
+		.visible
+			- des = {jr: "Yannis Kritikos", title: "CSC | Chania Surf Club" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed | Directed | Edited By #{des.jr}
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

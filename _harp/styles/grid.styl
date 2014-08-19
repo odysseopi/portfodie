@@ -1,0 +1,42 @@
+//base
+*,
+*:after,
+*:before
+  margin  0
+  padding 0
+  outline none
+  text-rendering  optimizeLegibility
+  -webkit-font-smoothing  antialiased
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+
+[class*='bit-']
+  float left
+
+[class*='bit-']:last-of-type
+  float left
+//layout
+.frame
+  &:after
+    display table
+      content ""
+      clear both
+  .bit-2
+    width 50%
+    .work
+        position relative
+        overflow hidden
+      img
+        width  100%
+        height auto
+        vertical-align bottom
+//state
+@media (max-width: 30em)
+  .frame
+    .bit-2
+      width 100%
+@media (min-width: 70em)
+  .frame
+    .bit-2
+      width 33.33%

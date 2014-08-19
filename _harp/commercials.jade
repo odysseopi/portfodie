@@ -1,0 +1,17 @@
+include includes/_head
+body
+	.container
+		.in_full
+			section
+				p 
+					img#trigger-overlay(src='image/kritikoslogo.png')
+		.frame
+			include mixins/_frame
+			+frame('scopeutirio.html', 'skopeutirio.jpg')
+			+frame('soccerbomb2.html', 'soccerbomb2.jpg')
+			+frame('csc1.html', 'csc1.jpg')
+			+frame('skatewise.html', 'skatewise.jpg')
+			+frame('blacksheep.html', 'blacksheep.jpg')
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

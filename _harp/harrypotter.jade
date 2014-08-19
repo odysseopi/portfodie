@@ -1,0 +1,46 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_youtube
+			mixin youtube('vg1Y4fCYb3M', 'Harry Potter')
+		.visible
+			- des = {jr: "Yannis Kritikos", voice: " Lampros Saoulis", rec: " Michalis Fragiadakis Theodorouleas" ,title: " Harry Potter" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed | Directed | Edited By #{des.jr}
+			h5
+				|	For <a href='http://www.jamesonempirediss.com/' style='cursor:pointer'>jamesonempirediss.com</a> film competition.
+			p(style='white-space:pre;')
+				|	<b>Voice Narration</b>
+				|	#{des.voice}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Sound Recording</b>
+				|	#{des.rec}
+				br
+			- array = [" Iris Ath", " Antonis Golfidis", " Dionisis Karimpidis", " Lampros Saoulis", " Georgia Skiada", " Michalis Fragiadakis"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Cast</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+				|	#{array[3]}
+				|	#{array[4]}
+				|	#{array[5]}		
+			- array = [" Mikro Polutehneio Chania"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Special Thanks to</b>
+				|	#{array[0]}
+				br
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

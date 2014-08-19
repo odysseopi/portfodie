@@ -1,0 +1,30 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('31829892', 'Attempt It (Short Action Film)')
+		.visible
+			- des = {jr: "Yannis Kritikos", filmer: "Giannis Boukras", title: "Attempt It" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed/Directed/Written/Edited By #{des.jr} & #{des.filmer}
+			h5
+				|	Visual Effects/ Music Coordination By #{des.jr}
+			- array = [" Haris Zaharopoulos", " Savvas Samanidis", " Arion Kalogeras", " Stamatis Mastropanagiotis", " John Dalios", " Giannis Boukras"]
+			p(style='white-space:pre;')
+				|	<b>Cast (In Order Of Appearance)</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+				|	#{array[3]}
+				|	#{array[4]}
+				|	#{array[5]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

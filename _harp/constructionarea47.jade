@@ -1,0 +1,18 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('41913504', 'Construction Area 47')
+		.visible
+			- des = {jr: "Yannis Kritikos", filmer: "Andreas Vasiliadis", title: "Construction Area 47" }
+			h4
+				|	#{des.title}
+			h5	
+				|	Filmed | Directed | Edited By #{des.jr}
+			h5
+				|	Additional Filming By #{des.filmer}
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script

@@ -1,0 +1,68 @@
+include includes/_head
+body
+	.container.vimeo
+		include mixins/_full
+		.responsive-video-container
+			include mixins/_vimeo
+			mixin vimeo('76394447', 'tertia.rectae')
+		.visible
+			- des = {jr: "Yannis Kritikos", sec: "Olia Paspalaki", ast: "Frantzeska Lasda",nar: "Fotis Kotrotsos", title: "tertia.rectae" }
+			h4
+				|	#{des.title}
+			h5
+				|	Filmed/Edited By #{des.jr}
+			h5
+				|	A short film, filmed at Chania | Crete.
+			p(style='white-space:pre;')
+				|	<b>Directed By</b>
+				|	#{des.jr} & #{des.sec}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Written By</b> 
+				|	#{des.jr} & #{des.sec}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Narrated By</b> 
+				|	#{des.nar}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Set Dresser</b> 
+				|	#{des.sec}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>1st Asst. Camera</b>
+				|	#{des.ast}
+				br
+			p(style='white-space:pre;')
+				br
+				|	<b>Dir. of Photography</b> 
+				|	#{des.jr}
+				br
+			- array = [" Marianna Ledachi", " Tasos Mpougkis", " Olia Paspalaki", " Giorgos Staurakakis"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Cast</b>
+				br
+				|	Maria - #{array[0]}
+				|	Nikos - #{array[1]}
+				|	Niko's Girlfriend - #{array[2]}
+				|	Maria's Boyfriend - #{array[3]}
+			- array = [" Nektarios Pogas", " Eirini Christoulaki", " Marisa", " Antonis Kelaidis", " Nektarios Manarakis"]
+			p(style='white-space:pre;')
+				br
+				|	<b>Extras</b>
+				br
+				|	#{array[0]}
+				|	#{array[1]}
+				|	#{array[2]}
+				|	#{array[3]}
+				|	#{array[4]}
+			a.read-more(href='#')
+				|	Read more +
+		include includes/_foot
+	include mixins/_overlay
+	include includes/_script
