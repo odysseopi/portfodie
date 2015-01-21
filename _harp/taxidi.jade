@@ -4,28 +4,24 @@ body
 		include mixins/_full
 		.responsive-video-container
 			include mixins/_vimeo
-			mixin vimeo('69040397', 'FOR YOU')
+			mixin vimeo('115453080', 'To taxidi')
 		.visible
-			- des = {jr: "Yannis Kritikos", maestro: "Datassette - The Rip (remix)", title: "FOR YOU" }
+			- des = {jr: "Yannis Kritikos", title: "To taxidi" }
 			h4
 				|	#{des.title}
 			h5	
 				|	Directed | Filmed | Edited By #{des.jr}
 			h5
-				|	A short film for the <i>Philip Bloom
-				|	Weekend Challenge 'Discipline'</i>
-				br
+				|	Second videoclip of Sbaraquack
+			- array = [" Constantin Kalatzakis", " Emmanuela Chiotaki"]
 			p(style='white-space:pre;')
 				br
-				|	<b>Music By</b> 
-				|	#{des.maestro}
-				br
-			- array = [" Sober Sober", " Eva Mpolou"]
-			p(style='white-space:pre;')
-				br
-				|	<b>Cast</b>
+				|	<b>Music</b>
 				br
 				|	#{array[0]}
+				br
+				|	<b>Vocals</b>
+				br
 				|	#{array[1]}
 			a.read-more(href='#')
 				|	Read more +
