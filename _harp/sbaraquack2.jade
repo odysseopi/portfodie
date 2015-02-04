@@ -4,13 +4,15 @@ body
 		include mixins/_full
 		.responsive-video-container
 			include mixins/_vimeo
-			mixin vimeo('48570026', 'Hittin\' The Roads')
+			mixin vimeo('112303801', 'Sbaraquack | Gay BlisterBar')
 		.visible
-			-des = {jr: "Yannis Kritikos", title: "Hittin' The Roads"}
+			- des = {jr: "Yannis Kritikos", title: "Sbaraquack | Gay BlisterBar" }
 			h4
 				|	#{des.title}
 			h5	
 				|	Directed | Filmed | Edited By #{des.jr}
+			h5
+				|	Second videoclip of Sbaraquack
 		include includes/_foot
 	include mixins/_overlay
 	include includes/_script
